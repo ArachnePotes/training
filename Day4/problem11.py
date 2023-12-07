@@ -20,7 +20,7 @@ In case of input data being supplied to the question, it should be assumed to be
 nums = input('equence of comma separated 4 digit binary numbers -->').split(',')
 
 aux = [ int(i,2) for i in nums]
-# print(aux) # uncomment to see converted input
+
 aux2 = []
 for i in aux:
     if (i%5) == 0:
