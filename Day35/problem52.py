@@ -14,7 +14,7 @@ class CustomExeption(Exception):
     msg = 'explanation of the error'
     def __init__(self, msg):
         self.msg = msg
-    def printed(self):
-        return self.msg
-error = CustomExeption("something wrong").printed()
-print(error)
+    def show(self):
+        return print(self.msg)
+error = CustomExeption("something wrong")
+error.show()
